@@ -19,7 +19,7 @@ export interface Profile{
 export interface Skill{
     name:string             //名前
     version:string          //バージョン
-    level:string            //スキルレベル
+    level:number            //スキルレベル
     category:string         //カテゴリ－
     capabilities:string     //できること
     note:string|null        //実装経験
@@ -44,7 +44,7 @@ export interface Work{
     period:string           //期間
     team:string             //作成チーム情報    
     role:string             //担当箇所
-    girhub:string           //GitHubリンク
+    github:string           //GitHubリンク
     link:string             //公開リンク
     venues:Venue[]          //出展・公開先
     techPoints:string|null  //ポイント
@@ -84,28 +84,28 @@ export interface TimeLineItem{
 }
  
 export const profile:Profile = {
-    name: "",
-    nameEn: "",
-    role: "",
-    school: "",
-    department: "",
-    graduationYear: "",
-    bio: "",
-    motto: "",
+    name: "林 煌之介",
+    nameEn: "KOunosuke Hayashi",
+    role: "プログラマー",
+    school: "京都デザイン＆テクノロジー専門学校",
+    department: "スーパーAI＆テクノロジー科",
+    graduationYear: "2028年3月予定",
+    bio: "反省と改善を常に続けながら前に進んでいくプログラマーです。具体例としてオブジェクトを反射する挙動を作成した際に、期待していた反射の挙動と実際の挙動が食い違っていたことがありました。速度パラメーターの修正や反射する際の計算処理の調整を繰り返し、最終的に想定していた挙動に近い動きが出来たことにとても達成感を感じました。それ以降、自分には困難なことでも少しづつ前に進んでいくことができるようになりました。最近はDirectX12の描画にいたるまでのプロセスや描画に必要なリソース・昨今のシェーダーの工夫などを通して、ゲーム体験における描画の理解を深めています。常に最適な設計を模索し、新たな知見を広げていくプログラマーです。",
+    motto: "反省と後悔は一生の苦しみ。前に進む義務とそのための力を与える",
     avater: "",
     links: {
-        github: "",
+        github: "https://github.com/uiuishiina",
         twitter: null
     }
     }
  
 export const skills:Skill[]=[
     {
-    name: "",
-    version: "",
-    level: "",
+    name: "c++",
+    version: "c++20",
+    level: 70,
     category: "",
-    capabilities: "",
+    capabilities: "WinAPIの基礎,DirectX12の基礎,ポリモーフィズムやテンプレートを意識した設計",
     note: null
     }
 ]
@@ -120,17 +120,17 @@ export const venues:Venue[]=[
 export const works:Work[]=[
     {
         id: 0,
-    title: "",
-    gener: "",
+    title: "ぱすふれっくす",
+    gener: "パズルゲーム",
     category: "",
     thumbnail: "",
     screenshots: [],
     tags: [],
-    platform: [],
-    period: "",
+    platform: ["wiondos"],
+    period: "3か月",
     team: "",
-    role: "",
-    girhub: "",
+    role: "オブジェクトの反射挙動、予測線、他のプログラマーとの連携機能",
+    github: "https://github.com/Momiji25315/pazuhurekkusu.git",
     link: "",
     venues: [],
     techPoints: null,

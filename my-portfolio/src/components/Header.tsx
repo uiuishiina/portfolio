@@ -2,7 +2,7 @@ import {Link}from "react-router-dom";
 import {profile}from "../data/PortFolio";
 
 interface Props{
-    thome:string;
+    theme:string;
     onThemeToggle:()=>void;
 }
 
@@ -21,7 +21,7 @@ export default function Header({ theme, onThemeToggle}:Props){
                         <ul className="header-nav">
                             {navItems.map((item)=>(
                                 <li key={item.label}>
-                                    <Link to= {'/#${item.hash}'}>
+                                    <Link to= {`/#${item.hash}`}>
                                     {item.label}
                                     </Link>
                                 </li>
@@ -29,6 +29,13 @@ export default function Header({ theme, onThemeToggle}:Props){
 
                         </ul>
                     </nav>
+
+                    <button className="theme-toggle"
+                    onClick={onThemeToggle}
+                    aria-label={theme==='drak'?'ライトモードに切り替え':'ダークモード'}
+                    >
+                        {theme==='drak'?'☀️' : '🌙'}
+                    </button>
                 </div>
             </div>
         </header>
