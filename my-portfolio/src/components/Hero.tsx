@@ -1,10 +1,17 @@
 import { profile } from "../data/PortFolio";
+import SafeImage from "./SafeImage";
 
 export default function Hero(){
     return(
         <section className = "hero section" id = "hero">
             <div className = "container">
-                <div className = "avater-plecerolder">T</div>
+                <div className = "avater-plecerolder">
+                    <SafeImage 
+                        src = {profile.avater}
+                        alt = {profile.name}
+                        fallback = {profile.nameEn.charAt(0)}
+                    />
+                </div>
                 <p className = "hero-eyebrow">Portfolio</p>
                 
                 <h1 className = "hero-name">

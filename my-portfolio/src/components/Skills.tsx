@@ -29,7 +29,30 @@ function SkillCrad({skill}:{skill:Skill}){
                     <span className = "skill-card-name">(skill.name)</span>
                     <span className = "skill-card-name">(skill.version)</span>
                 </div>
+
+                <span className ="skill-card-bach"
+                style={{color:config.color,borderColor:config.color}}>
+                    {config.label}
+                </span>
             </div>
+
+            <div className = "skill-bar-bg">
+                <div className = "skill-bar-fill"
+                style={{width: `${skill.level}%`}}/>
+            </div>
+
+            <ul className = "slill-capabilities">
+                {skill.capabilities.map((cap)=>(
+                    <li key = {cap} className = "skill-cap-tag"></li>
+                ))}
+            </ul>
+
+            {skill.note && (
+                <p className = "skill-note">
+                    <span className = "skill-note-icon"></span>
+                    {skill.note}
+                </p>
+            )}
         </div>
     )
 }

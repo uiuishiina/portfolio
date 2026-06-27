@@ -21,7 +21,7 @@ export interface Skill{
     version:string          //バージョン
     level:number            //スキルレベル
     category:string         //カテゴリ－
-    capabilities:string     //できること
+    capabilities:string[]     //できること
     note:string|null        //実装経験
 }
  
@@ -92,7 +92,7 @@ export const profile:Profile = {
     graduationYear: "2028年3月予定",
     bio: "反省と改善を常に続けながら前に進んでいくプログラマーです。具体例としてオブジェクトを反射する挙動を作成した際に、期待していた反射の挙動と実際の挙動が食い違っていたことがありました。速度パラメーターの修正や反射する際の計算処理の調整を繰り返し、最終的に想定していた挙動に近い動きが出来たことにとても達成感を感じました。それ以降、自分には困難なことでも少しづつ前に進んでいくことができるようになりました。最近はDirectX12の描画にいたるまでのプロセスや描画に必要なリソース・昨今のシェーダーの工夫などを通して、ゲーム体験における描画の理解を深めています。常に最適な設計を模索し、新たな知見を広げていくプログラマーです。",
     motto: "反省と後悔は一生の苦しみ。前に進む義務とそのための力を与える",
-    avater: "",
+    avater: "/images/IMG_0498.png",
     links: {
         github: "https://github.com/uiuishiina",
         twitter: null
@@ -105,7 +105,7 @@ export const skills:Skill[]=[
     version: "c++20",
     level: 70,
     category: "",
-    capabilities: "WinAPIの基礎,DirectX12の基礎,ポリモーフィズムやテンプレートを意識した設計",
+    capabilities: ["WinAPIの基礎,DirectX12の基礎,ポリモーフィズムやテンプレートを意識した設計"],
     note: null
     }
 ]
