@@ -19,9 +19,9 @@ export interface Profile{
 export interface Skill{
     name:string             //名前
     version:string          //バージョン
-    level:string            //スキルレベル
+    level:number            //スキルレベル
     category:string         //カテゴリ－
-    capabilities:string     //できること
+    capabilities:string[]     //できること
     note:string|null        //実装経験
 }
  
@@ -103,9 +103,25 @@ export const skills:Skill[]=[
     {
     name: "C++",
     version: "C++20",
-    level: "8",
+    level: 80,
     category: "language",
-    capabilities: "ConceptsでTemplateの制限やコンパイル時型制限ができる",
+    capabilities: ["ConceptsでTemplateの制限やコンパイル時型制限ができる"],
+    note: null  //実装経験
+    },
+    {
+    name: "html",
+    version: "",
+    level: 20,
+    category: "language",
+    capabilities: ["web上に文字を表示できる"],
+    note: null  //実装経験
+    },
+    {
+    name: "HollowKnight",
+    version: "v1.5.12459",
+    level: 100,
+    category: "game",
+    capabilities: ["ストーリークリア率 112% "],
     note: null  //実装経験
     }
 ]
