@@ -84,12 +84,12 @@ export interface TimeLineItem{
 }
  
 export const profile:Profile = {
-    name: "",
-    nameEn: "",
-    role: "",
-    school: "",
-    department: "",
-    graduationYear: "",
+    name: "林 煌之介",
+    nameEn: "Kounosuke Hayashi",
+    role: "プログラマー",
+    school: "京都デザイン&テクノロジー専門学校",
+    department: "スーパーゲームクリエイター専攻",
+    graduationYear: "2028年3月見込み",
     bio: "",
     motto: "",
     avater: "",
@@ -101,12 +101,12 @@ export const profile:Profile = {
  
 export const skills:Skill[]=[
     {
-    name: "",
-    version: "",
-    level: "",
-    category: "",
-    capabilities: "",
-    note: null
+    name: "C++",
+    version: "C++20",
+    level: "8",
+    category: "language",
+    capabilities: "ConceptsでTemplateの制限やコンパイル時型制限ができる",
+    note: null  //実装経験
     }
 ]
  
