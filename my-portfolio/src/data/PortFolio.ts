@@ -117,6 +117,14 @@ export const skills:Skill[]=[
     note: null  //実装経験
     },
     {
+    name: "Github",
+    version: "",
+    level: 60,
+    category: "web",
+    capabilities: ["Githubで制作物のバージョン管理ができる"],
+    note: null  //実装経験
+    },
+    {
     name: "HollowKnight",
     version: "v1.5.12459",
     level: 100,

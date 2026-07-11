@@ -1,5 +1,6 @@
 import {Link}from "react-router-dom";
 import {profile}from "../data/PortFolio";
+import { FaMoon, FaSun } from "react-icons/fa6";
 
 interface Props{
     theme:string;
@@ -33,7 +34,7 @@ export default function Header({ theme, onThemeToggle}:Props){
                     onClick = {onThemeToggle}
                     aria-label = {theme === 'dark' ? `ライトモードに切り替え` : `ダークモードに切り替え`}
                     >
-                        {theme === `dark` ? `☀️` : `🌙`}
+                        {theme === `dark` ? <FaSun/> : <FaMoon/>}
                     </button>
                 </div>
             </div>
