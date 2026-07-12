@@ -7,11 +7,11 @@ export default function Hero(){
         <section className = "hero section" id = "hero">
             <div className = "container">
                 {/* -- アイコン -- */}
-                <div className = "avater-placeholder">俺の顔面</div>
+                <div className = "avatar-placeholder"></div>
                 {/* -- タイトル -- */}
-                <p className = "hero-eyebrow">PortFolio</p>
+                <p className = "hero-eyebrow">my_PortFolio</p>
                 {/* -- 名前 -- */}
-                <h1 className = "here-name">
+                <h1 className = "hero-name">
                     <span className = "gradient">{profile.name}</span>
                     <span className = "hero-name-en">{profile.nameEn}</span>
                 </h1>
@@ -31,7 +31,7 @@ export default function Hero(){
                     <a href = "#contact" className = "btn btn-outline">連絡先はこちら ➡</a>
                 </div>
             </div>
-            <div className = "hero-scrolle">Scrolle</div>
+            <div className = "hero-scroll">Scroll</div>
         </section>
     )
 }

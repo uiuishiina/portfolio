@@ -20,7 +20,7 @@ export default function Contact() {
                         スカウト・インターンの募集など、
                         お気軽にご連絡ください。
                         <br/>
-                        学生の身のため返信にお時間をいただく場合がございます。
+                        学生の身のため返信にお時間をいただく場合がございます
                         <br/>
                         ご了承ください。
                     </p>
@@ -28,13 +28,14 @@ export default function Contact() {
                         { links
                         .filter( (link): link is typeof link & {href : string} => link.href !== null)
                         .map( (link) => (
-                            <a key = {link.label}
-                            href = {link.href}
-                            className = "contact-link-item"
-                            target = {link.href.startsWith('mailto:') ? undefined : "_blank"}
-                            rel = "noreferrer"
-                        >
-                            <span className = {`contact-link-icon ${link.icon}`}/>
+                            <a 
+                                key = {link.label}
+                                href = {link.href}
+                                className = "contact-link-item"
+                                target = {link.href.startsWith('mailto') ? undefined : '_blank'}
+                                rel = "noreferrer"
+                            >
+                            <span className = "contact-link-icon">{link.icon}</span>
                             {link.label}
                         </a>
                         ))}

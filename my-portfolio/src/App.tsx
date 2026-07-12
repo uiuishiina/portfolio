@@ -14,6 +14,7 @@ function HomePage(){
     <>
     <Hero/>
     <Skills/>
+    <Contact/>
     </>
   )
 }

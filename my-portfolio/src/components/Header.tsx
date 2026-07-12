@@ -9,7 +9,8 @@ interface Props{
 
 export default function Header({ theme, onThemeToggle}:Props){
     const navItems = [
-        {label:"About",hash:"about"}
+        {label:"About",hash:"about"},
+        {label:"Contact",hash:"contact"}
     ];
 
     return (
@@ -24,7 +25,7 @@ export default function Header({ theme, onThemeToggle}:Props){
                         <ul className = "header-nav">
                             {navItems.map( (item) => (
                                 <li key = {item.label}>
-                                    <Link to = {'/#${item.hash}'}> {item.label} </Link>
+                                    <Link to = {`/#${item.hash}`}> {item.label} </Link>
                                 </li>
                             ))}
                         </ul>
@@ -32,9 +33,9 @@ export default function Header({ theme, onThemeToggle}:Props){
                     <button 
                     className = "theme-toggle"
                     onClick = {onThemeToggle}
-                    aria-label = {theme === 'dark' ? `ライトモードに切り替え` : `ダークモードに切り替え`}
+                    aria-label = {theme === 'dark' ? 'ライトモードに切り替え' : 'ダークモードに切り替え'}
                     >
-                        {theme === `dark` ? <FaSun/> : <FaMoon/>}
+                        {theme === 'dark' ? <FaSun/> : <FaMoon/>}
                     </button>
                 </div>
             </div>
