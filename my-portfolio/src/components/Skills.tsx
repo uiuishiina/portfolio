@@ -43,7 +43,6 @@ function SkillCard( {skill} : {skill : Skill}) {
         </span>
       </div>
       <div className = "skill-bar-bg">
-        {/* -- 表示スタイル -- */}
         <div className = "skill-bar-fill" style = {{width : `${skill.level}%`}}/>
       </div>
       <ul className = "skill-capabilities">

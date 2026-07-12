@@ -94,7 +94,7 @@ export const profile:Profile = {
     motto: "",
     avater: "",
     links: {
-        github: "",
+        github: "https://github.com/uiuishiina",
         twitter: null
     }
     }

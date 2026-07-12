@@ -70,7 +70,7 @@
 /* スキル名 */
 .skill-card-name {
   font-family: var(--font-en);
-  font-size: 1rem;
+  font-size: 1.25rem;
   font-weight: 700;
 }
 
@@ -96,9 +96,9 @@
 
 /* スキルバーの背景（グレーの細いレール） */
 .skill-bar-bg {
-  height: 3px;
+  height: 10px;
   background: var(--color-border);
-  border-radius: 2px;
+  border-radius: 5px;
   overflow: hidden;
   margin-bottom: 18px;
 }
