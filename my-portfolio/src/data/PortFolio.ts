@@ -35,16 +35,17 @@ export interface Venue{
 export interface Work{
     id: number              //連番
     title:string            //タイトル
-    gener:string            //ジャンル
+    genre:string            //ジャンル
     category:string         //カテゴリー
     thumbnail:string        //サムネ
     screenshots:string[]    //スクリーンショット
+    description:string      //作品概要
     tags:string[]           //タグ
     platform:string[]       //プラットフォーム
     period:string           //期間
     team:string             //作成チーム情報    
     role:string             //担当箇所
-    girhub:string           //GitHubリンク
+    github:string           //GitHubリンク
     link:string             //公開リンク
     venues:Venue[]          //出展・公開先
     techPoints:string|null  //ポイント
@@ -90,8 +91,8 @@ export const profile:Profile = {
     school: "京都デザイン&テクノロジー専門学校",
     department: "スーパーゲームクリエイター専攻",
     graduationYear: "2028年3月見込み",
-    bio: "",
-    motto: "",
+    bio: "反省と改善を常に続けながら前に進んでいくプログラマーです。最近はDirectX12の描画にいたるまでのプロセスや描画に必要なリソース・昨今のシェーダーの工夫などを通して、ゲーム体験における描画の関わり方を勉強しています。",
+    motto: "座右の銘[ 反省と後悔は一生の苦しみ ]",
     avater: "",
     links: {
         github: "https://github.com/uiuishiina",
@@ -106,6 +107,14 @@ export const skills:Skill[]=[
     level: 80,
     category: "language",
     capabilities: ["ConceptsでTemplateの制限やコンパイル時型制限ができる"],
+    note: null  //実装経験
+    },
+    {
+    name: "HLSL",
+    version: "",
+    level: 60,
+    category: "language",
+    capabilities: ["基礎的なコードが書ける","DirectXで利用できる","Unityでの使用経験もあり"],
     note: null  //実装経験
     },
     {
@@ -144,24 +153,25 @@ export const venues:Venue[]=[
 export const works:Work[]=[
     {
         id: 0,
-    title: "",
-    gener: "",
-    category: "",
+    title: "自作描画エンジン",
+    genre: "自作エンジン",
+    category: "Engine",
     thumbnail: "",
     screenshots: [],
-    tags: [],
-    platform: [],
-    period: "",
-    team: "",
-    role: "",
-    girhub: "",
+    description:"ゲームグラフィックスに興味を持ち、自分で学習しながら制作するための基盤となるプログラム", 
+    tags: ['DirectX','C++20'],
+    platform: ['Windows'],
+    period: "2025年6月~現在",
+    team: "個人製作",
+    role: "プログラマー",
+    github: "https://github.com/uiuishiina/PortFolio-DirectX",
     link: "",
     venues: [],
-    techPoints: null,
-    designNotes: null,
-    implmntationTheme: null,
-    troublesooting: null,
-    perfformance: null
+    techPoints: '今後別のプラットフォームでも利用したいことを考えて、ポリモーフィズムを生かして機能作成することを目指す。',
+    designNotes: 'デザインパターンを参考に、[描画フローを一目で確認できること][改造と拡張のしやすさ]の両立を目指した',
+    implmntationTheme: 'DrawPassクラスに実際の描画コマンド等を設定できるように実装したため、初期化時に必要な要素の作成とDrawPassの設定だけで描画ができるように',
+    troublesooting: '全体で使いやすい設計と今後の活用,発展,改造を見据えた変更に耐えうる設計の両立が非常に難しくいまだに苦戦中。現在はクラスを小さく作り一つ一つを組み合わせて作ることで、変更の容易さと拡張のしやすさをとることにしている',
+    perfformance: 'レンダリングループ内での大きな処理負荷は今のところ確認していないが、今後の拡張しだいでは問題が起きる可能性がある'
     }
 ]
  
@@ -193,8 +203,32 @@ export const certifications:Certification[]=[
  
 export const timelineitems:TimeLineItem[]=[
     {
-    year: "",
-    event: ""
+    year: "2005年",
+    event: "生誕"
+    },
+    {
+    year: "2021年 4月",
+    event: "京都府立鴨折高等学校入学"
+    },
+    {
+    year: "2021年 12月",
+    event: "精神的不調のため高校中退,N高等学校入学"
+    },
+    {
+    year: "2024年 3月",
+    event: "N高等学校卒業"
+    },
+    {
+    year: "2024年 4月",
+    event: "京都デザイン＆テクノロジー専門学校入学"
+    },
+    {
+    year: "2025年 9月",
+    event: "プログラムの面白さ、奥深さを知る"
+    },
+    {
+    year: "2026年 3月",
+    event: "自作の描画エンジンを作成する計画を開始"
     }
 ]
  

@@ -9,8 +9,10 @@ interface Props{
 
 export default function Header({ theme, onThemeToggle}:Props){
     const navItems = [
+        {label:"Top",hash:"hero"},
         {label:"About",hash:"about"},
         {label:"Skills",hash:"skills"},
+        {label:"Works",hash:"works"},
         {label:"Contact",hash:"contact"}
     ];
 

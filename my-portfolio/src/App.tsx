@@ -7,13 +7,18 @@ import ScrollToTop from "./components/ScrollToTop"
 import { useTheme } from "./hooks/useTheme"
 import Skills from "./components/Skills"
 import Contact from "./components/Contact"
+import About from "./components/About"
+import WorkDetail from "./pages/WorkDetail"
+import Works from "./components/Works"
 
 
 function HomePage(){
   return (
     <>
     <Hero/>
+    <About/>
     <Skills/>
+    <Works/>
     <Contact/>
     </>
   )
@@ -30,6 +35,7 @@ const {theme , toggle} = useTheme()
         <main>
           <Routes>
             <Route path = "/" element = {<HomePage/>} />
+            <Route path = "/works/:id" element = {<WorkDetail/>} />
           </Routes>
         </main>
       <Footer/>
