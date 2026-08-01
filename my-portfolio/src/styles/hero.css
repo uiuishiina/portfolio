@@ -138,7 +138,7 @@
 /* 画面下部の「スクロールしてね」インジケーター */
 .hero-scroll {
   position: absolute;
-  bottom: 32px;
+  bottom: 12px;
   left: 50%;
   transform: translateX(-50%); /* 水平中央に配置 */
   display: flex;

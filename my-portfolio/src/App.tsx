@@ -10,6 +10,7 @@ import Contact from "./components/Contact"
 import About from "./components/About"
 import WorkDetail from "./pages/WorkDetail"
 import Works from "./components/Works"
+import Certifications from "./components/Certifications"
 
 
 function HomePage(){
@@ -18,6 +19,7 @@ function HomePage(){
     <Hero/>
     <About/>
     <Skills/>
+    <Certifications/>
     <Works/>
     <Contact/>
     </>

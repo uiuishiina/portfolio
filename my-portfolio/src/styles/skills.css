@@ -97,7 +97,7 @@
 /* スキルバーの背景（グレーの細いレール） */
 .skill-bar-bg {
   height: 10px;
-  background: var(--color-border);
+  background: var(--color-skillline);
   border-radius: 5px;
   overflow: hidden;
   margin-bottom: 18px;

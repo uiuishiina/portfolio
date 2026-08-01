@@ -126,19 +126,27 @@ export const skills:Skill[]=[
     note: null  //実装経験
     },
     {
+    name: "Unity",
+    version: "6.3",
+    level: 70,
+    category: "Engine",
+    capabilities: ["ゲーム開発ができる","基礎的なシェーダーを扱える"],
+    note: null  //実装経験
+    },
+    {
     name: "Github",
     version: "",
-    level: 60,
+    level: 70,
     category: "web",
     capabilities: ["Githubで制作物のバージョン管理ができる"],
     note: null  //実装経験
     },
     {
-    name: "HollowKnight",
-    version: "v1.5.12459",
-    level: 100,
-    category: "game",
-    capabilities: ["ストーリークリア率 112% "],
+    name: "SourceTree",
+    version: "",
+    level: 70,
+    category: "Application",
+    capabilities: ["GitのGUIツールとして利用できる"],
     note: null  //実装経験
     }
 ]
@@ -159,7 +167,7 @@ export const works:Work[]=[
     thumbnail: "",
     screenshots: [],
     description:"ゲームグラフィックスに興味を持ち、自分で学習しながら制作するための基盤となるプログラム", 
-    tags: ['DirectX','C++20'],
+    tags: ['DirectX','C++20',`HLSL`],
     platform: ['Windows'],
     period: "2025年6月~現在",
     team: "個人製作",
@@ -193,7 +201,7 @@ export const gamejams:GameJam[]=[
  
 export const certifications:Certification[]=[
     {
-    name: "",
+    name: "Microsoft Excel (Office 2019)",
     date: "",
     category: "",
     score: "",
