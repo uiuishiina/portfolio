@@ -26,7 +26,7 @@
   --color-text-muted: #8888aa; /* 補足テキスト・ラベルなど薄い文字色 */
   --font-en: 'Space Grotesk', sans-serif; /* 英字フォント */
   --font-ja: 'Noto Sans JP', sans-serif;  /* 日本語フォント */
-  --radius: 12px;              /* カードなどの角丸の大きさ */
+  --radius: 12px;              /* カードnpm などの角丸の大きさ */
   --transition: 0.3s ease;     /* ホバーアニメーションの速さ */
 }
 
@@ -40,6 +40,7 @@
   --color-surface-2: #c7d5f8;
   --color-border: #010202;
   --color-toggle: #a4fbf7;
+  --color-skillline: #ffffff;
   --color-accent: #ff5959;
   --color-accent-2: #7c6af7;
   --color-text: #3c80ec;
