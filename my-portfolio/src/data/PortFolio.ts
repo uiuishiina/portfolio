@@ -110,6 +110,14 @@ export const skills:Skill[]=[
     note: null  //実装経験
     },
     {
+    name: "C#",
+    version: "",
+    level: 50,
+    category: "language",
+    capabilities: ["ゲーム開発ができる","Unityでの使用経験もあり"],
+    note: null  //実装経験
+    },
+    {
     name: "HLSL",
     version: "",
     level: 60,
