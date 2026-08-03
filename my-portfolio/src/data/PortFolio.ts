@@ -92,7 +92,7 @@ export const profile:Profile = {
     department: "スーパーゲームクリエイター専攻",
     graduationYear: "2028年3月見込み",
     bio: "反省と改善を常に続けながら前に進んでいくプログラマーです。最近はDirectX12の描画にいたるまでのプロセスや描画に必要なリソース・昨今のシェーダーの工夫などを通して、ゲーム体験における描画の関わり方を勉強しています。",
-    motto: "座右の銘[ 反省と後悔は一生の苦しみ ]",
+    motto: "座右の銘[ 反省は一生の糧,改善は永遠の成長 ]",
     avater: "",
     links: {
         github: "https://github.com/uiuishiina",
